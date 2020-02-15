@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vertical menu</title>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <ul class="menu list">
+      <li class="menu__item menu__item--user item">
+        <svg class="icon">
+          <use href="./images/symbol-defs.svg#user"></use>
+        </svg>
+        Profile
+      </li>
+      <li class="menu__item menu__item--email item">
+        <svg class="icon">
+          <use href="./images/symbol-defs.svg#email"></use>
+        </svg>
+        Messages
+        <ul class="menu__submenu submenu list">
+          <li class="submenu__item item">Inbox</li>
+          <li class="submenu__item item">Send</li>
+          <li class="submenu__item item">Draft</li>
+        </ul>
+      </li>
+      <li class="menu__item menu__item--settings item">
+        <svg class="icon">
+          <use href="./images/symbol-defs.svg#settings"></use>
+        </svg>
+        Settings
+      </li>
+      <li class="menu__item menu__item--off item">
+        <svg class="icon">
+          <use href="./images/symbol-defs.svg#power"></use>
+        </svg>
+        Logout
+      </li>
+    </ul>
+  </body>
+</html>

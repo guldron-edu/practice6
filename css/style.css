@@ -1,0 +1,100 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 220px;
+  background-color: #262e37;
+  box-shadow: 2px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  border: 1px solid rgb(24, 30, 38);
+  /* overflow: hidden; */
+
+  border-radius: 5px;
+  background-color: rgb(38, 46, 55);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.004),
+    inset 0px 2px 0px 0px rgba(255, 255, 255, 0.07);
+}
+
+.menu__item {
+  cursor: pointer;
+  height: 50px;
+  line-height: 50px;
+  font-size: 16px;
+  color: #c9d1e3;
+  background: linear-gradient(#4a4e5a, #363b46);
+  text-shadow: 0.5px 0.866px 1px rgba(0, 0, 0, 0.5);
+}
+
+.menu__item:hover {
+  background: linear-gradient(#6a6f7c, #484d5a);
+  border: 1px solid rgb(61, 59, 59);
+}
+.icon {
+  height: 17px;
+  width: 17px;
+  fill: #c9d1e3;
+  margin-left: 20px;
+  margin-right: 20px;
+  transform: translateY(3px);
+}
+.menu__item--email {
+  position: relative;
+}
+
+.menu__item--email::after {
+  position: absolute;
+  text-align: center;
+  right: 10px;
+  top: 15px;
+  content: '38';
+  font-size: 15px;
+  line-height: 21px;
+  display: block;
+  height: 20px;
+  width: 30px;
+  border-radius: 3px;
+  background: linear-gradient(#767c8a, #525867);
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.3),
+    inset 0px 1px 0px 0px rgba(255, 255, 255, 0.1);
+}
+
+.menu__item--email:hover .submenu {
+  display: block;
+}
+
+.menu__item--email:hover {
+  margin-bottom: 90px;
+}
+.submenu {
+  display: none;
+}
+
+.submenu__item {
+  position: relative;
+  height: 30px;
+  line-height: 30px;
+  font-size: 13px;
+  color: rgb(121, 142, 161);
+  text-align: left;
+  text-shadow: 0.5px 0.866px 1px rgba(0, 0, 0, 0.5);
+  padding-left: 35px;
+}
+
+.submenu__item::before {
+  position: absolute;
+  left: 20px;
+  top: 12px;
+  content: '';
+  display: block;
+  height: 1px;
+  width: 1px;
+  border: 3px solid transparent;
+  border-left: 3px solid rgb(121, 142, 161);
+}
+
+.submenu__item:hover {
+  background-color: rgb(31, 115, 199);
+  color: rgb(214, 213, 210);
+}
