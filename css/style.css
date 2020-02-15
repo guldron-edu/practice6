@@ -60,13 +60,22 @@
     inset 0px 1px 0px 0px rgba(255, 255, 255, 0.1);
 }
 
-.menu__item--email:hover .submenu {
+.menu__item--email:hover .submenu--messages {
+  display: block;
+}
+
+.menu__item--settings:hover .submenu--settings {
   display: block;
 }
 
 .menu__item--email:hover {
   margin-bottom: 90px;
 }
+
+.menu__item--settings:hover {
+  margin-bottom: 90px;
+}
+
 .submenu {
   display: none;
 }
